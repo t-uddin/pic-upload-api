@@ -5,6 +5,12 @@ import service
 
 main = Blueprint('main', __name__)
 
+
+@main.route('/', methods=['GET'])
+def upload():
+    if request.method == "GET":
+        return "Working"
+
 @main.route('/upload/', methods=['POST'])
 def upload():
     if request.method == "POST":
