@@ -7,7 +7,7 @@ main = Blueprint('main', __name__)
 
 
 @main.route('/', methods=['GET'])
-def upload():
+def home():
     if request.method == "GET":
         return "Working"
 
